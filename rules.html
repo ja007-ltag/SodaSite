@@ -42,11 +42,38 @@
     button:hover {
       background-color: #586e00;
     }
+    .btn-back {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #859900;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #586e00;
+    }
+    .intro-text {
+      max-width: 580px;
+      margin: 0 auto 30px;
+      text-align: justify;
+      line-height: 1.5em;
+      color: #444;
+  }
+
+    
   </style>
 </head>
 <body>
 
   <h1>Правила нашей таверны Soda Dungeon</h1>
+
+  <p class="intro-text">
+    Добро пожаловать в нашу дружную компанию! Тут мы обсуждаем игры, делимся опытом и просто отдыхаем. Чтобы атмосфера осталась лёгкой и приятной, просим уважать друг друга и соблюдать несколько простых правил:
+  </p>
 
   <div>
     <button onclick="expandAll()">Развернуть все</button>
@@ -118,6 +145,10 @@
       document.querySelectorAll('details').forEach(d => d.open = false);
     }
   </script>
+
+  <nav style="text-align: center; margin-top: 30px;">
+    <a href="index.html" class="btn-back">← Назад</a>
+  </nav>
 
 </body>
 </html>
