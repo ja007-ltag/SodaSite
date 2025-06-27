@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Правила таверны Soda Dungeon</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #fdf6e3;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    details {
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      background: #eee8d5;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+    button {
+      margin-bottom: 20px;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 6px;
+      background-color: #859900;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #586e00;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Правила нашей таверны Soda Dungeon</h1>
+
+  <div>
+    <button onclick="expandAll()">Развернуть все</button>
+    <button onclick="collapseAll()">Свернуть все</button>
+  </div>
+
+  <ol>
+    <li>
+      <details>
+        <summary>Флуд и мелкие сообщения - аккуратно и лучше в общем чате.</summary>
+        <p>Если хотите поделиться чем‑то не по теме, пишите в общем чате. Короткие посты (1-2 слова или буквы) мешают чтению и раздражают, особенно хозяина таверны. Пишите полноценно - как будто сидите у костра, а не убегаете от владыки тьмы.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Уважение - девиз таверны.</summary>
+        <p>Без оскорблений, хамства и прочих «пьяных драк». У нас дружеская обстановка - давайте так и общаться.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Ники и аватарки - будь читаемым и понятным.</summary>
+        <p>Нечитаемые шрифты и таинственные символы сбивают с толку, приводят к недопониманию и обидам. Если вам нравятся ваши ники - оставляйте их, но не обижайтесь на неправильные трактовки и то, что вас не сразу запоминают.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Обсуждаем только игры и связанные с ними темы.</summary>
+        <p>Угадайки «кто я», загадки и прочие фокусы для привлечения внимания оставьте для других мест.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Реклама «голых тёток» и способов заработать на них - подальше от нашей таверны!</summary>
+        <p>Для этого есть специализированные каналы и заведения. Здесь мы собираемся за интересным общением и полезными советами.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Политика, экстремизм, принуждение и оскорбления - не в нашей таверне.</summary>
+        <p>Здесь мир и уважение; никаких споров на эти темы. Наказания - крайне жестокие и безжалостные.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Хозяин таверны - его слово решающее.</summary>
+        <p>Если что-то не нравится - перечитайте этот пункт.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Админов тоже надо слушаться, им статус выдан за заслуги.</summary>
+        <p>Если что-то не устраивает - см. пункт 7.</p>
+      </details>
+    </li>
+    <li>
+      <details>
+        <summary>Право вносить правки - за хозяином таверны.</summary>
+        <p>Предложения по дополнениям и корректировкам приветствуются.</p>
+      </details>
+    </li>
+  </ol>
+
+  <script>
+    function expandAll() {
+      document.querySelectorAll('details').forEach(d => d.open = true);
+    }
+    function collapseAll() {
+      document.querySelectorAll('details').forEach(d => d.open = false);
+    }
+  </script>
+
+</body>
+</html>
